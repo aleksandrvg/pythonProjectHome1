@@ -1,5 +1,6 @@
 import math
 
+# Площадь сектора круга
 print('Выберите вариант расчета площади сектора круга')
 choice = int(input('1 - по длине дуги, 2 - по количеству секторов: '))
 
@@ -26,3 +27,25 @@ elif choice == 2:
 
 else:
     print('Нет такого варианта расчета')
+
+
+# Сумма чисел
+def sum_range(start, end):
+    sum = 0
+    res = start
+    while res < end + 1:
+        sum += res
+        res += 1
+    print(f'Сумма чисел от {start} до {end} равно {sum}')
+
+
+print('Сумма чисел')
+start1 = int(input('Введите 1-е число: '))
+end1 = int(input('Введите 2-е число: '))
+if start1 > end1:
+    start2 = end1
+    end2 = start1
+else:
+    start2 = start1
+    end2 = end1
+sum_range(start2, end2)
