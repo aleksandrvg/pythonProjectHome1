@@ -49,3 +49,10 @@ else:
     start2 = start1
     end2 = end1
 sum_range(start2, end2)
+
+# Стоимость телефона
+initial_cost = 35800
+increase = 20
+final_cost = initial_cost + initial_cost / 100 * increase
+print(f'Стоимость телефона до подорожания {initial_cost} рублей.')
+print(f'Стоимость телефона после подорожания {final_cost} рублей.')
